@@ -324,8 +324,68 @@ footer{
 .scrol_top_btn.active{
     opacity: 1;
 }
-
 /* end footer */
+/* modal */
+.modal_bg{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+}
+.modal{
+    margin: auto;
+    background: #fff;
+    width: 25%;
+    padding:2rem;
+}
+.close{
+    color: #aaaaaa;
+    float: right;
+    font-size: 23px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close:hover{
+   color: var(--extradar);
+}
+.modal_title{
+    text-align: center;
+    font-family: var(--Montserrat);
+    text-transform: capitalize;
+    font-size: 1.3rem;
+}
+.input_box input{
+    width: 100%;
+    padding: .7rem;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.btn{
+    text-align: end;
+    margin: 2rem 0 ;  
+}
+.btn button{
+    color: #f9f9f9;
+    background: #000016;
+    padding: .5rem 1.2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    cursor:pointer ;
+}
+.btn button:hover{
+    color: #000016;
+    background-color: #fff;
+}
+  
+
 /* responsive */
 @media (max-width:1049px){
     .navbar_nav{
@@ -427,6 +487,12 @@ footer{
     .navbar_nav a:hover {
         background: rgba(39, 39, 233, 0.979);
         color: #fff;
+    }
+    .modal{
+        margin: auto;
+        background: #fff;
+        width: 60%;
+        padding:2rem;
     }
 
 }
